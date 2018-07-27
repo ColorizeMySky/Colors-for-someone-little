@@ -1,0 +1,126 @@
+body {
+	background-color: #e5e5e5;
+	margin: 0;
+}
+#russian, #english {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 20px;
+	min-height: 44vh;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+}
+#russian {
+	padding-bottom: 40px;
+}
+#english {
+	padding-top: 40px;
+}
+.noActivId {
+	background-color: #cccccc;
+	pointer-events: none;	
+}
+.color {
+	margin: 10px;
+	padding: 50px;
+	border: 1px solid #7f7f7f;	
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none; 
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.noActivId > div {
+	opacity: 0.3;
+}
+.color:hover {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+				0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.selected, .unclickable {
+	text-shadow: 1px 0 0 rgba(255, 255, 255, 1),
+			     0 1px 0 rgba(255, 255, 255, 1),
+			     -1px 0 0 rgba(255, 255, 255, 1),
+			     0 -1px 0 rgba(255, 255, 255, 1);
+}
+.noActivId .selected, .noActivId .unclickable {
+	opacity: 1;	
+}
+.red.selected, .red.unclickable {
+	background-color: red;
+}
+.green.selected, .green.unclickable {
+	background-color: #009900;
+}
+.blue.selected, .blue.unclickable {
+	background-color: blue;
+}
+.yellow.selected, .yellow.unclickable {
+	background-color: yellow;
+}
+.skyblue.selected, .skyblue.unclickable {
+	background-color: #29b6f6;
+}
+.pink.selected, .pink.unclickable {
+	background-color: #ff99cc;
+}
+.purple.selected, .purple.unclickable {
+	background-color: #ab47bc;
+}
+.brown.selected, .brown.unclickable {
+	background-color: #8b4513;
+}
+.black.selected, .black.unclickable {
+	background-color: black;
+}
+.white.selected, .white.unclickable {
+	background-color: white;
+}
+.grey.selected, .grey.unclickable {
+	background-color: grey;
+}
+.orange.selected, .orange.unclickable {
+	background-color: #ff6600;
+}
+.unclickable {
+	pointer-events: none;
+}
+
+#reload {
+	display: none;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+    top: calc(50% - 100px);
+}
+#reload button {
+	display: block;
+	margin: 0 auto;
+	padding: 50px 25px;
+	border-radius: 20px;
+    background-color: rgba(151, 87, 91, 1);    
+    background-image: -webkit-gradient(linear, 0% 0%, 100% 100%,color-stop(0, rgb(0, 165, 223)),color-stop(0.2, rgb(62, 20, 123)),color-stop(0.4, rgb(226, 0, 121)),color-stop(0.6, rgb(223, 19, 44)),color-stop(0.8, rgb(243, 239, 21)),color-stop(1, rgb(0, 152, 71)));
+    /* Android 2.3 */
+    background-image: -webkit-linear-gradient(top left,rgb(0, 165, 223) 0%,rgb(62, 20, 123) 20%,rgb(226, 0, 121) 40%,rgb(223, 19, 44) 60%,rgb(243, 239, 21) 80%,rgb(0, 152, 71) 100%);
+    /* IE10+ */
+    background-image: linear-gradient(to bottom right,rgb(0, 165, 223) 0%,rgb(62, 20, 123) 20%,rgb(226, 0, 121) 40%,rgb(223, 19, 44) 60%,rgb(243, 239, 21) 80%,rgb(0, 152, 71) 100%);
+    background-image: -ms-linear-gradient(top left,rgb(0, 165, 223) 0%,rgb(62, 20, 123) 20%,rgb(226, 0, 121) 40%,rgb(223, 19, 44) 60%,rgb(243, 239, 21) 80%,rgb(0, 152, 71) 100%);
+    color: #e5e5e5;
+    font-size: 30px;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 1),
+			     0 1px 0 rgba(0, 0, 0, 1),
+			     -1px 0 0 rgba(0, 0, 0, 1),
+			     0 -1px 0 rgba(0, 0, 0, 1);
+}
+#reload button:hover {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 1),
+		     0 1px 0 rgba(0, 0, 0, 1),
+		     -1px 0 0 rgba(0, 0, 0, 1),
+		     0 -1px 0 rgba(0, 0, 0, 1),
+		     0 3px 6px rgba(0, 0, 0, 0.16),
+		     0 3px 6px rgba(0, 0, 0, 0.23);
+	transition-duration: 0.2s;
+}
