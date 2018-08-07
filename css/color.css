@@ -1,0 +1,29 @@
+/* line 1, ../sass/color.scss */
+body {
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 8, ../sass/color.scss */
+.choose {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 16, ../sass/color.scss */
+.color {
+  width: 30%;
+  margin: 10px;
+  padding: 50px;
+  border: 1px solid #7f7f7f;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #fff;
+}
