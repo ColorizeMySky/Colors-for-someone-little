@@ -1,24 +1,100 @@
+$maxwidth: 1200px;
+$gradienColor: rgba(239, 254, 226, 0.7);
+$textColorLight: #e7e7e7;
+
+@mixin box {
+	width: $maxwidth*0.3;
+	border: 1px solid #7f7f7f;
+	height: $maxwidth*0.1;
+}
+@mixin box-hover {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+				0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
 body {
+	min-height: 100vh;
 	margin: 0;
 	-webkit-user-select: none;
 	   -moz-user-select: none;
 		-ms-user-select: none;
-	  		user-select: none; 
+	  		user-select: none;
+	background-image: linear-gradient(to bottom right,$gradienColor 0%, adjust-hue($gradienColor, 72deg) 20%,adjust-hue($gradienColor, 144deg) 40%,adjust-hue($gradienColor, 216deg) 60%,adjust-hue($gradienColor, 288deg) 80%,$gradienColor 100%);
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-size: 3vw;
+	text-align: center;
+	text-transform: uppercase;
+	color: #131313;
+}
+@media screen and (min-width: 1200px) {
+	body  {
+		font-size: 36px;
+	}
+}
+.current {
+	@include box;	
+	margin: 0 auto;
+	margin-top: 50px;
 }
 .choose {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	max-width: 1200px;
+	justify-content: space-between;	
+	width: $maxwidth;
+	max-width: 100%; 
 	margin: 0 auto;
+	margin-top: 50px;
 }
 .color {
-	width: 30%;
-	margin: 10px;
-	padding: 50px;
-	border: 1px solid #7f7f7f;	
+	@include box;
+	display: flex;
+    align-items: center;
+    justify-content: center;	
+	margin: 10px;	
 	cursor: pointer;
-	background-color: rgba(255, 255, 255, 0.5);
-	background-color: #fff;
+
+	&:hover {
+		@include box-hover;
+	}
+}
+
+.red {
+	background-color: red;
+}
+.green {
+	background-color: #009900;
+	color: $textColorLight;
+}
+.blue {
+	background-color: blue;
+	color: $textColorLight;
+}
+.yellow {
+	background-color: yellow;
+}
+.skyblue {
+	background-color: #29b6f6;
+}
+.pink {
+	background-color: #ff99cc;
+}
+.purple {
+	background-color: #ab47bc;
+}
+.brown {
+	background-color: #8b4513;
+	color: $textColorLight;
+}
+.black {
+	background-color: black;
+	color: $textColorLight;
+}
+.white {
+	background-color: white;
+}
+.grey {
+	background-color: grey;
+}
+.orange {
+	background-color: #ff6600;
 }
