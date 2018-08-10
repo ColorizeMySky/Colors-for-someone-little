@@ -1,4 +1,4 @@
-/* line 15, ../sass/colors.scss */
+/* line 21, ../sass/colors.scss */
 body {
   min-height: 100vh;
   margin: 0;
@@ -6,7 +6,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-image: linear-gradient(to bottom right, rgba(239, 254, 226, 0.7) 0%, rgba(226, 254, 247, 0.7) 20%, rgba(226, 228, 254, 0.7) 40%, rgba(254, 226, 250, 0.7) 60%, rgba(254, 235, 226, 0.7) 80%, rgba(239, 254, 226, 0.7) 100%);
+  background-image: linear-gradient(to top left, rgba(239, 254, 226, 0.7) 0%, rgba(226, 254, 247, 0.7) 20%, rgba(226, 228, 254, 0.7) 40%, rgba(254, 226, 250, 0.7) 60%, rgba(254, 235, 226, 0.7) 80%, rgba(239, 254, 226, 0.7) 100%);
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
   font-size: 3vw;
   text-align: center;
@@ -15,21 +15,22 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 30, ../sass/colors.scss */
+  /* line 36, ../sass/colors.scss */
   body {
     font-size: 36px;
   }
 }
-/* line 34, ../sass/colors.scss */
+/* line 40, ../sass/colors.scss */
 .current {
   width: 360px;
-  border: 1px solid #7f7f7f;
   height: 120px;
+  border: 1px solid #7f7f7f;
+  border-radius: 10px;
   margin: 0 auto;
   margin-top: 50px;
 }
 
-/* line 39, ../sass/colors.scss */
+/* line 45, ../sass/colors.scss */
 .choose {
   display: flex;
   align-items: center;
@@ -40,82 +41,131 @@ body {
   margin-top: 50px;
 }
 
-/* line 48, ../sass/colors.scss */
+/* line 54, ../sass/colors.scss */
 .color {
   width: 360px;
-  border: 1px solid #7f7f7f;
   height: 120px;
+  border: 1px solid #7f7f7f;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 10px;
   cursor: pointer;
 }
-/* line 56, ../sass/colors.scss */
+/* line 60, ../sass/colors.scss */
 .color:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* line 61, ../sass/colors.scss */
+/* line 65, ../sass/colors.scss */
 .red {
   background-color: red;
 }
 
-/* line 64, ../sass/colors.scss */
+/* line 68, ../sass/colors.scss */
 .green {
   background-color: #009900;
   color: #e7e7e7;
 }
 
-/* line 68, ../sass/colors.scss */
+/* line 72, ../sass/colors.scss */
 .blue {
   background-color: blue;
   color: #e7e7e7;
 }
 
-/* line 72, ../sass/colors.scss */
+/* line 76, ../sass/colors.scss */
 .yellow {
   background-color: yellow;
 }
 
-/* line 75, ../sass/colors.scss */
+/* line 79, ../sass/colors.scss */
 .skyblue {
   background-color: #29b6f6;
 }
 
-/* line 78, ../sass/colors.scss */
+/* line 82, ../sass/colors.scss */
 .pink {
   background-color: #ff99cc;
 }
 
-/* line 81, ../sass/colors.scss */
+/* line 85, ../sass/colors.scss */
 .purple {
   background-color: #ab47bc;
 }
 
-/* line 84, ../sass/colors.scss */
+/* line 88, ../sass/colors.scss */
 .brown {
   background-color: #8b4513;
   color: #e7e7e7;
 }
 
-/* line 88, ../sass/colors.scss */
+/* line 92, ../sass/colors.scss */
 .black {
   background-color: black;
   color: #e7e7e7;
 }
 
-/* line 92, ../sass/colors.scss */
+/* line 96, ../sass/colors.scss */
 .white {
   background-color: white;
 }
 
-/* line 95, ../sass/colors.scss */
+/* line 99, ../sass/colors.scss */
 .grey {
   background-color: grey;
 }
 
-/* line 98, ../sass/colors.scss */
+/* line 102, ../sass/colors.scss */
 .orange {
   background-color: #ff6600;
+}
+
+/* line 105, ../sass/colors.scss */
+.burgundy {
+  background-color: #800000;
+}
+
+/* line 108, ../sass/colors.scss */
+.message {
+  margin-top: 50px;
+  text-shadow: 2px 2px 0px #fff, 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* line 113, ../sass/colors.scss */
+.next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 180px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 2vw;
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+}
+/* line 127, ../sass/colors.scss */
+.next:after {
+  display: block;
+  position: absolute;
+  left: 180px;
+  content: ' ';
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-left: 120px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 60px solid transparent;
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 140, ../sass/colors.scss */
+  .next {
+    font-size: 30px;
+  }
 }
