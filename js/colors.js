@@ -1,5 +1,5 @@
-var colors = ['red', 'green', 'blue', 'yellow', 'skyblue']//, 'pink', 'purple', 'brown', 'black', 'white', 'grey', 'orange', 'burgundy']
-var fullColors = ['red', 'green', 'blue', 'yellow', 'skyblue']//, 'pink', 'purple', 'brown', 'black', 'white', 'grey', 'orange', 'burgundy'];
+var colors = ['red', 'green', 'blue', 'yellow', 'skyblue', 'pink', 'purple', 'brown', 'black', 'white', 'grey', 'orange', 'burgundy']
+var fullColors = ['red', 'green', 'blue', 'yellow', 'skyblue', 'pink', 'purple', 'brown', 'black', 'white', 'grey', 'orange', 'burgundy'];
 
 function compareRandom(a, b) {
   return Math.random() - 0.5;
