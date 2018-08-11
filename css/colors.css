@@ -169,11 +169,20 @@ body {
 .next p {
   position: absolute;
   margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 2vw;
 }
 
 @media screen and (min-width: 1000px) {
-  /* line 148, ../sass/colors.scss */
+  /* line 153, ../sass/colors.scss */
   .next {
     font-size: 30px;
+  }
+  /* line 156, ../sass/colors.scss */
+  .next p {
+    margin-top: 15px;
   }
 }
