@@ -29,9 +29,10 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   margin-top: 50px;
+  max-width: 80%;
 }
 
-/* line 47, ../sass/colors.scss */
+/* line 48, ../sass/colors.scss */
 .choose {
   display: flex;
   align-items: center;
@@ -42,7 +43,7 @@ body {
   margin-top: 50px;
 }
 
-/* line 56, ../sass/colors.scss */
+/* line 57, ../sass/colors.scss */
 .color {
   width: 360px;
   height: 120px;
@@ -55,87 +56,87 @@ body {
   margin: 10px;
   cursor: pointer;
 }
-/* line 62, ../sass/colors.scss */
+/* line 63, ../sass/colors.scss */
 .color:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* line 67, ../sass/colors.scss */
+/* line 68, ../sass/colors.scss */
 .red {
   background-color: red;
 }
 
-/* line 70, ../sass/colors.scss */
+/* line 71, ../sass/colors.scss */
 .green {
   background-color: #009900;
   color: #e7e7e7;
 }
 
-/* line 74, ../sass/colors.scss */
+/* line 75, ../sass/colors.scss */
 .blue {
   background-color: blue;
   color: #e7e7e7;
 }
 
-/* line 78, ../sass/colors.scss */
+/* line 79, ../sass/colors.scss */
 .yellow {
   background-color: yellow;
 }
 
-/* line 81, ../sass/colors.scss */
+/* line 82, ../sass/colors.scss */
 .skyblue {
   background-color: #29b6f6;
 }
 
-/* line 84, ../sass/colors.scss */
+/* line 85, ../sass/colors.scss */
 .pink {
   background-color: #ff99cc;
 }
 
-/* line 87, ../sass/colors.scss */
+/* line 88, ../sass/colors.scss */
 .purple {
   background-color: #ab47bc;
 }
 
-/* line 90, ../sass/colors.scss */
+/* line 91, ../sass/colors.scss */
 .brown {
   background-color: #8b4513;
   color: #e7e7e7;
 }
 
-/* line 94, ../sass/colors.scss */
+/* line 95, ../sass/colors.scss */
 .black {
   background-color: black;
   color: #e7e7e7;
 }
 
-/* line 98, ../sass/colors.scss */
+/* line 99, ../sass/colors.scss */
 .white {
   background-color: white;
 }
 
-/* line 101, ../sass/colors.scss */
+/* line 102, ../sass/colors.scss */
 .grey {
   background-color: grey;
 }
 
-/* line 104, ../sass/colors.scss */
+/* line 105, ../sass/colors.scss */
 .orange {
   background-color: #ff6600;
 }
 
-/* line 107, ../sass/colors.scss */
+/* line 108, ../sass/colors.scss */
 .burgundy {
   background-color: #800000;
 }
 
-/* line 110, ../sass/colors.scss */
+/* line 111, ../sass/colors.scss */
 .message {
   margin-top: 50px;
   text-shadow: 2px 2px 0px #fff, 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* line 115, ../sass/colors.scss */
+/* line 116, ../sass/colors.scss */
 .next {
   display: flex;
   align-items: center;
@@ -152,11 +153,11 @@ body {
   cursor: pointer;
   pointer-events: none;
 }
-/* line 129, ../sass/colors.scss */
+/* line 130, ../sass/colors.scss */
 .next:after {
   display: block;
-  position: absolute;
-  left: 180px;
+  position: relative;
+  margin-left: 180px;
   content: ' ';
   width: 0;
   height: 0;
@@ -164,9 +165,14 @@ body {
   border-left: 60px solid #333333;
   border-bottom: 60px solid transparent;
 }
+/* line 142, ../sass/colors.scss */
+.next p {
+  position: absolute;
+  margin: 0;
+}
 
 @media screen and (min-width: 1000px) {
-  /* line 142, ../sass/colors.scss */
+  /* line 148, ../sass/colors.scss */
   .next {
     font-size: 30px;
   }

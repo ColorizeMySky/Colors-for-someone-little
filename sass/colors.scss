@@ -43,6 +43,7 @@ body {
 	@include box;	
 	margin: 0 auto;
 	margin-top: 50px;
+	max-width: 80%;
 }
 .choose {
 	display: flex;
@@ -128,14 +129,19 @@ body {
 
 	&:after {
 		display: block;
-		position: absolute;
-		left: $maxwidth*0.3/2;
+		position: relative;
+		margin-left: $maxwidth*0.3/2;
 		content: ' ';
 		width: 0;
 		height: 0;
 		border-top: $maxwidth*0.1/2 solid transparent;
 		border-left: $maxwidth*0.1/2 solid rgba(51,51,51,1);
 		border-bottom: $maxwidth*0.1/2 solid transparent;
+	}
+
+	p {
+		position: absolute;
+		margin: 0;
 	}
 }
 @media screen and (min-width: 1000px) {
