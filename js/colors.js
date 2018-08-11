@@ -99,11 +99,16 @@ function compareColors(elem, current) {
 function startAgain() {
 	document.querySelector('.current').style.display = 'none';
 	document.querySelector('.choose').style.display = 'none';
-	document.querySelector('.message').innerHTML = 'Congratulations!<br>All colors are guessed.<br>Click for play again.';
+	document.querySelector('.exit').style.display = 'block';
+	document.querySelector('.message').innerHTML = 'Congratulations!<br>All colors are guessed.<br>Click for play again. <br><br> or <br><br> press "Exit" for finished the game.';
 	document.querySelector('.message').style.cursor = 'pointer';
 	document.querySelector('.message').onclick = function() {
 			location.reload();
 		}
+}
+
+document.querySelector('.exit').onclick = function() {
+	window.close();
 }
 
 step();

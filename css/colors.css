@@ -186,3 +186,29 @@ body {
     margin-top: 15px;
   }
 }
+/* line 161, ../sass/colors.scss */
+.exit {
+  width: 360px;
+  height: 120px;
+  border: 1px solid #7f7f7f;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: none;
+  margin: 0 auto;
+  width: 180px;
+  height: 60px;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 2vw;
+}
+/* line 170, ../sass/colors.scss */
+.exit:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+/* line 173, ../sass/colors.scss */
+.exit:focus {
+  outline: none;
+}
+/* line 177, ../sass/colors.scss */
+.exit p {
+  margin: 0;
+}

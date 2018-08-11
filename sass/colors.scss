@@ -158,3 +158,23 @@ body {
 		}
 	}
 }
+.exit {
+	@include box;
+	display: none;
+    margin: 0 auto;
+	width: $maxwidth*0.15;
+	height: $maxwidth*0.05;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-size: 2vw;
+
+	&:hover {
+		@include box-hover;
+	}
+	&:focus {
+		outline: none;
+	}
+
+	p {
+		margin: 0;
+	}
+}
